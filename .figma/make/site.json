@@ -1,0 +1,10 @@
+{
+  "description": "Easily create smooth slide transitions for text, enhancing presentations and content with engaging animations that captivate audiences.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
