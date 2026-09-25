@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "JetBrains Mono:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/JetBrainsMono_wght__1") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono:ExtraLight";
+  font-style: normal;
+  font-weight: 200;
+  src: url("https://static.figma.com/font/JetBrainsMono_wght__1") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono:Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://static.figma.com/font/JetBrainsMono_wght__1") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/JetBrainsMono_wght__1") format("woff2");
+}
+@font-face {
+  font-family: "Padauk:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/Padauk-Bold_2") format("woff2");
+}
+@font-face {
+  font-family: "Reddit Mono:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/RedditMono_wght__1") format("woff2");
+}
+@font-face {
+  font-family: "Reddit Mono:SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://static.figma.com/font/RedditMono_wght__1") format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono:Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://static.figma.com/font/RobotoMono_wght__2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono:Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://static.figma.com/font/RobotoMono_wght__2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono:Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://static.figma.com/font/RobotoMono_wght__2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/RobotoMono_wght__2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono:SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://static.figma.com/font/RobotoMono_wght__2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto:Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://static.figma.com/font/Roboto_wdth_wght__3") format("woff2");
+}
+
+/* Slide-in animation for text elements */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animate].slide-left {
+  transform: translateX(-22px);
+}
+
+[data-animate].slide-left.visible {
+  transform: translateX(0);
+}
